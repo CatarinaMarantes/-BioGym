@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #222;
+    background: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 2em;
+    background: #1e3a5f;
+}
+
+header a,
+header span {
+    color: white;
+    text-decoration: none;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 1.5em;
+}
+
+nav form {
+    margin: 0;
+}
+
+nav button {
+    background: none;
+    border: 1px solid white;
+    color: white;
+    padding: 0.3em 0.8em;
+    cursor: pointer;
+}
+
+main {
+    flex: 1;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2em;
+}
+
+footer {
+    text-align: center;
+    padding: 1em;
+    background: #1e3a5f;
+    color: white;
+}
+
+/* Mensagens */
+.mensagem {
+    padding: 0.8em 1em;
+    border-radius: 4px;
+}
+
+.mensagem.sucesso {
+    background: #d4edda;
+    color: #155724;
+}
+
+.mensagem.erro {
+    background: #f8d7da;
+    color: #721c24;
+}
+
+/* Formulários */
+.formulario {
+    max-width: 400px;
+    margin: 0 auto;
+    background: white;
+    padding: 2em;
+    border-radius: 8px;
+}
+
+.formulario form {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario label {
+    margin-top: 1em;
+    margin-bottom: 0.3em;
+    font-weight: bold;
+}
+
+.formulario input {
+    padding: 0.6em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+.formulario button {
+    margin-top: 1.5em;
+    padding: 0.8em;
+    background: #1e3a5f;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.formulario button:hover {
+    background: #2c5282;
+}
