@@ -118,7 +118,7 @@ CREATE TABLE Certificacao (
     dataObtencao TEXT NOT NULL,
     validada INTEGER NOT NULL DEFAULT 0 CHECK (validada IN (0, 1)),
     dataValidacao TEXT,
-    PRIMARY KEY (idTreinador, idModalidade),
+    PRIMARY KEY (idTreinador, idModalidade)
     FOREIGN KEY (idTreinador) REFERENCES Treinador(idUtilizador),
     FOREIGN KEY (idModalidade) REFERENCES Modalidade(id)
 );

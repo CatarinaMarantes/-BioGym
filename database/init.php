@@ -1,4 +1,9 @@
 <?php
+if (PHP_SAPI !== 'cli') {
+    http_response_code(403);
+    exit('Acesso proibido.');
+}
+
 $path = __DIR__ . '/biogym.db';
 if (file_exists($path)) unlink($path);
 

@@ -44,7 +44,7 @@ INSERT INTO Certificacao (idTreinador, idModalidade, nome, entidadeEmissora, dat
 
 -- Aulas
 INSERT INTO Aula (id, data, horaInicio, horaFim, nivel, vagas, idModalidade, idSala, idTreinador) VALUES
-(1, '2026-11-10', '09:00', '10:00', 'INICIANTE', 15, 2, 2, 3),
+(1, '2026-11-11', '09:00', '10:00', 'INICIANTE', 15, 2, 2, 3),
 (2, '2026-11-11', '18:30', '19:30', 'INTERMEDIO', 20, 3, 3, 2);
 
 -- Inscrições em Aulas
